@@ -97,7 +97,7 @@ footer {
 
 /* Adjusted carousel image size */
 .carousel img {
-  width: 70%; /* Reduced size from 80% to 70% */
+  width: 30%; /* Reduced size from 80% to 70% */
 }
 
 .carousel-control {
