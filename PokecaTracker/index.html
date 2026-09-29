@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ポケモンカードの大会戦績を記録・集計し、次の対戦に活かすWebアプリ Pokeca Trackerの開発紹介。" />
+  <title>Pokeca Tracker | Wataru Okamoto's Portfolio</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="project-page pokeca-project">
+  <header class="project-hero">
+    <nav class="project-nav" aria-label="パンくずリスト">
+      <a href="../index.html">Wataru Okamoto</a>
+      <span aria-hidden="true">/</span>
+      <span>Pokeca Tracker</span>
+    </nav>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="project-badge"><span class="pokeca-mark" aria-hidden="true"></span> Personal Project · In Development</div>
+        <h1>対戦の記憶を、<br /><em>次の一勝</em>につなげる。</h1>
+        <p class="hero-lead">Pokeca Trackerは、ポケモンカードの大会・対戦結果・使用デッキをまとめて記録し、自分の戦績を振り返るためのWebアプリです。</p>
+        <div class="hero-actions">
+          <a class="project-button primary" href="https://pokeca-tracker-eta.vercel.app/" target="_blank" rel="noopener noreferrer">開発中のアプリを見る ↗</a>
+        </div>
+        <p class="development-note"><strong>現在開発中</strong><span>MVPを実装し、本番公開に向けて改善を続けています。</span></p>
+        <p class="preview-note">現在は限定公開中です。ログインは開発者のみ利用できます。</p>
+      </div>
+      <figure class="hero-product-shot">
+        <img src="images/dashboard.png" alt="Pokeca Trackerのダッシュボード。全体勝率や対戦数、直近の大会を一覧できる" />
+      </figure>
+    </div>
+  </header>
+
+  <main class="project-main">
+    <section class="project-section problem-section" aria-labelledby="problem-title">
+      <img class="section-watermark problem-watermark" src="images/tournament-detail.png" alt="" aria-hidden="true" />
+      <p class="section-kicker">Why I built it</p>
+      <h2 id="problem-title">大会のあと、結果だけで終わらせない。</h2>
+      <div class="problem-grid">
+        <p class="section-intro">大会で得た気づきを次に活かすには、勝敗だけでなく「どのデッキで、何と対戦し、先攻・後攻のどちらだったか」を残す必要があります。散らばりがちな記録を一か所に集め、振り返りやすくするために開発しました。</p>
+        <dl class="project-facts">
+          <div><dt>Platform</dt><dd>Responsive Web App</dd></div>
+          <div><dt>Status</dt><dd>開発中 / MVP実装済み</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="project-section experience-section" aria-labelledby="features-title">
+      <img class="section-watermark experience-watermark" src="images/dashboard.png" alt="" aria-hidden="true" />
+      <p class="section-kicker">Core experience</p>
+      <h2 id="features-title">記録から振り返りまで、ひとつの流れに。</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>デッキを管理</h3>
+          <p>デッキ名やアーキタイプ、デッキコード、メモを登録。使わなくなったデッキも履歴を壊さずアーカイブできます。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+          <h3>大会・対戦を記録</h3>
+          <p>大会種別、順位、参加人数に加えて、各ラウンドの対面、勝敗、先攻・後攻を一試合ずつ記録できます。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>戦績をすぐ確認</h3>
+          <p>ダッシュボードで全体勝率、対戦数、勝敗内訳、直近の大会を集計。入力した結果をすぐ次の振り返りにつなげます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section screen-section" id="screens" aria-labelledby="screens-title">
+      <p class="section-kicker">Product screens</p>
+      <h2 id="screens-title">情報量が多くても、迷わず読める画面。</h2>
+      <div class="screen-carousel-header">
+        <p class="carousel-hint">横にスライドして画面を見る <span aria-hidden="true">→</span></p>
+        <div class="screen-carousel-controls" aria-label="スクリーンショットの操作">
+          <button type="button" class="screen-carousel-button prev" aria-label="前の画面">←</button>
+          <button type="button" class="screen-carousel-button next" aria-label="次の画面">→</button>
+        </div>
+      </div>
+      <div class="screen-showcase">
+        <figure class="screen-card screen-card-wide">
+          <img src="images/tournament-detail.png" alt="大会情報、戦績サマリー、ラウンド別の対戦結果を表示する大会詳細画面" loading="lazy" />
+          <figcaption><strong>大会詳細</strong><span>大会全体の結果とラウンドごとの戦績を同じ画面で把握</span></figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="images/dashboard.png" alt="勝率や最近の大会を表示するダッシュボード画面" loading="lazy" />
+          <figcaption><strong>ダッシュボード</strong><span>主要な数字と直近の活動をひと目で確認</span></figcaption>
+        </figure>
+        <figure class="screen-card screen-card-deck">
+          <img src="images/deck-detail.png" alt="登録情報と公式デッキ画像を並べて表示するデッキ詳細画面" loading="lazy" />
+          <figcaption><strong>デッキ登録・編集</strong><span>デッキコードからデッキ構成を確認</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="project-footer">
+    <a href="../index.html">← ポートフォリオ一覧へ戻る</a>
+    <p>&copy; 2026 Wataru Okamoto</p>
+  </footer>
+  <script>
+    const screenShowcase = document.querySelector('.screen-showcase');
+    const screenCards = [...document.querySelectorAll('.screen-showcase .screen-card')];
+    const moveScreens = (direction) => {
+      const cardWidth = screenCards[0]?.getBoundingClientRect().width ?? 0;
+      const gap = Number.parseFloat(getComputedStyle(screenShowcase).gap) || 0;
+      screenShowcase.scrollBy({ left: direction * (cardWidth + gap), behavior: 'smooth' });
+    };
+    document.querySelector('.screen-carousel-button.prev')?.addEventListener('click', () => moveScreens(-1));
+    document.querySelector('.screen-carousel-button.next')?.addEventListener('click', () => moveScreens(1));
+  </script>
+</body>
+</html>
