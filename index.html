@@ -6,34 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
+<body class="portfolio-home">
+  <header class="home-hero">
+    <p class="home-eyebrow">Portfolio / Personal Projects</p>
     <h1>Wataru Okamoto</h1>
-    <p>Applications Engineer</p>
+    <p class="home-role">Applications Engineer</p>
   </header>
 
-  <main>
-    <section>
-      <h2>📌 Personal Projects</h2>
-      <ul>
-        <li>
-          <img src="images/LimitListIcon.png" alt="アプリのアイコン" width="20" style="vertical-align: middle; margin-right: 5px;" />
-          <a href="LimitCountDown/"> 賞味期限カウントダウン（ショーミー）</a> - 賞味期限を管理するアプリ
-        </li>
-        <li>
-          <img src="images/RoadLoaderIcon.png" alt="アプリのアイコン" width="20" style="vertical-align: middle; margin-right: 5px;" />
-          <a href="https://github.com/klab16/IbarakiFront"> Road Loader </a> - 道路標識を翻訳するアプリ
-        </li>
-        <li>
-          <img src="images/MikanNavi.png" alt="アプリのアイコン" width="20" style="vertical-align: middle; margin-right: 5px;" />
-          <a href="https://github.com/wataru0/MikanNavi"> Mikan Navi </a> - みかんの皮SNS
-        </li>
-      </ul>
+  <main class="home-main">
+    <section class="projects-section" aria-labelledby="projects-title">
+      <div class="projects-heading">
+        <div>
+          <p class="home-section-label">Selected work</p>
+          <h2 id="projects-title">Personal Projects</h2>
+        </div>
+      </div>
+
+      <div class="project-timeline">
+        <article class="timeline-project featured-project">
+          <div class="timeline-date">
+            <time datetime="2026-07">2026.07</time>
+            <span>—</span>
+            <span>Present</span>
+          </div>
+          <a class="project-card" href="PokecaTracker/">
+            <div class="project-card-icon"><span class="project-icon pokeca-icon" aria-hidden="true"></span></div>
+            <div class="project-card-copy">
+              <div class="project-card-title"><h3>Pokeca Tracker</h3><span class="status-label">開発中</span></div>
+              <p>ポケモンカードの大会戦績を記録し、次の対戦へ活かすWebアプリ。</p>
+              <span class="project-link-label">プロジェクトを見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="timeline-project">
+          <div class="timeline-date">
+            <time datetime="2020-12-26">2020.12.26</time>
+            <span>—</span>
+            <time datetime="2020-12-27">12.27</time>
+          </div>
+          <a class="project-card" href="https://github.com/wataru0/MikanNavi">
+            <div class="project-card-icon"><img src="images/MikanNavi.png" alt="" /></div>
+            <div class="project-card-copy">
+              <div class="project-card-title"><h3>Mikan Navi</h3></div>
+              <p>2日間のハッカソンで開発した、みかんの皮を投稿して楽しむSNSアプリ。</p>
+              <span class="project-link-label">GitHubで見る <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="timeline-project">
+          <div class="timeline-date">
+            <time datetime="2020-09">2020.09</time>
+            <span>—</span>
+            <time datetime="2021-02">2021.02</time>
+          </div>
+          <a class="project-card" href="https://github.com/klab16/IbarakiFront">
+            <div class="project-card-icon"><img src="images/RoadLoaderIcon.png" alt="" /></div>
+            <div class="project-card-copy">
+              <div class="project-card-title"><h3>Road Loader</h3></div>
+              <p>道路標識を認識し、情報を分かりやすく伝える翻訳アプリ。</p>
+              <span class="project-link-label">GitHubで見る <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="timeline-project">
+          <div class="timeline-date">
+            <time datetime="2020-04">2020.04</time>
+            <span>—</span>
+            <time datetime="2021-12">2021.12</time>
+          </div>
+          <a class="project-card" href="LimitCountDown/">
+            <div class="project-card-icon"><img src="images/LimitListIcon.png" alt="" /></div>
+            <div class="project-card-copy">
+              <div class="project-card-title"><h3>賞味期限カウントダウン</h3></div>
+              <p>期限が近い食材を通知し、食品を無駄なく使い切るためのiOSアプリ。</p>
+              <span class="project-link-label">プロジェクトを見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Wataru Okamoto</p>
+  <footer class="home-footer">
+    <p>&copy; 2026 Wataru Okamoto</p>
   </footer>
 </body>
 </html>
