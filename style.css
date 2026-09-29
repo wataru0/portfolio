@@ -315,12 +315,13 @@ footer {
 
 .hero-copy h1 {
   margin: 25px 0 24px;
-  font-size: clamp(2.6rem, 5.6vw, 5.4rem);
+  font-size: clamp(2.75rem, 4.5vw, 4.1rem);
   line-height: 1.08;
   letter-spacing: -0.055em;
 }
 
 .hero-copy h1 em { color: var(--project-red); font-style: normal; }
+.heading-line { display: block; white-space: nowrap; }
 
 .hero-lead,
 .section-intro {
@@ -358,7 +359,11 @@ footer {
   color: var(--project-muted);
   font-size: 0.78rem;
 }
-.development-note strong { color: var(--project-red); }
+.development-note strong {
+  flex-shrink: 0;
+  color: var(--project-red);
+  white-space: nowrap;
+}
 
 .preview-note {
   margin: 8px 0 0;
@@ -494,6 +499,7 @@ footer {
   .hero-grid { padding-top: 42px; }
   .hero-product-shot { width: min(100%, 390px); margin-right: auto; margin-left: auto; }
   .hero-copy h1 { font-size: 2.75rem; }
+  .project-section h2 { font-size: 1.85rem; }
   .hero-actions { flex-direction: column; }
   .project-button { width: 100%; }
   .development-note { align-items: flex-start; flex-direction: column; gap: 2px; }
